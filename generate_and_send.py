@@ -30,7 +30,7 @@ WEEK  = datetime.now().strftime("Week of %B %d, %Y")
 
 def load_skill() -> str:
     """Read SKILL.md and extract the body (everything after the YAML frontmatter)."""
-    skill_path = Path(__file__).parent.parent / "skill" / "SKILL.md"
+    skill_path = Path(__file__).parent.parent / "SKILL.md"
     content = skill_path.read_text(encoding="utf-8")
 
     # Strip YAML frontmatter (between --- markers)
